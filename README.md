@@ -1,95 +1,136 @@
-# Flight Fare Prediction
+# ✈️ Flight Fare Prediction – ML Web Application
 
-- LinkedIn [Bhagya Yelleti](https://www.linkedin.com/in/bhagya-yelleti/)
+🔗 **LinkedIn:** https://www.linkedin.com/in/bhagya-yelleti/  
+🔗 **GitHub:** https://github.com/Bhagy-Yelleti
 
-## About The Project
+---
 
-Welcome to the Flight Fare Prediction App! This project aims to provide users with a tool to predict flight fares based on various parameters, allowing them to make informed decisions when booking air travel. The app utilizes machine learning algorithms trained on historical flight data to estimate future fares. Users can input details such as departure and arrival locations, date, and airline preferences to receive an estimated fare for their desired flight. Whether you're a frequent traveller or planning your next vacation, this app is designed to make the flight booking process more transparent and efficient. Feel free to explore, contribute, and enhance the functionality of this Flight Fare Prediction App!
+## 📌 About The Project
 
-## Built With
+**Flight Fare Prediction** is an end-to-end **Machine Learning web application** that predicts flight ticket prices based on user-provided travel details such as airline, source city, destination city, travel time, stops, duration, and days left for departure.
 
- - Pandas
- - Numpy
- - Scikit-learn
- - Seaborn
- - Matplotlib
- - Flask
- - DVC
- - MLFlow
+The project demonstrates a **production-style ML pipeline**, including preprocessing, model inference using saved artifacts, and a Flask-based web interface for real-time predictions.
 
-## Getting Started
+This repository represents a **significantly modified and extended version** of an open-source project, with major debugging, refactoring, dependency resolution, and deployment-readiness improvements implemented.
 
-This will help you understand how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+---
 
-## Installation Steps
+## 🚀 Features
 
-### Option 1: Installation from GitHub
+- Flask-based web application for flight fare prediction  
+- Modular ML pipeline (data → preprocessing → prediction)  
+- Artifact-based model loading (`.pkl`)  
+- Custom exception handling and logging  
+- Production-style `src/` project structure  
+- Supports demo mode using dummy ML artifacts  
+- MLOps tooling integration (DVC, MLflow)
 
-Follow these steps to install and set up the project directly from the GitHub repository:
+---
 
-1. **Clone the Repository**
-   - Open your terminal or command prompt.
-   - Navigate to the directory where you want to install the project.
-   - Run the following command to clone the GitHub repository:
-     ```
-     git clone https://github.com/KalyanMurapaka45/Flight-Fare-Prediction.git
-     ```
+## 🏗️ Project Structure
 
-2. **Create a Virtual Environment** (Optional but recommended)
-   - It's a good practice to create a virtual environment to manage project dependencies. Run the following command:
-     ```
-     conda create -p <Environment_Name> python==<python version> -y
-     ```
+flight-fare-prediction-ml/
+│
+├── app.py # Flask application entry point
+├── Artifacts/ # ML artifacts (ignored in git)
+├── src/
+│ └── FlightPricePrediction/
+│ ├── components/ # Data ingestion & transformation
+│ ├── pipeline/ # Training & prediction pipelines
+│ ├── utils/ # Utility helpers
+│ ├── exception.py # Custom exception handling
+│ └── logger.py # Logging utilities
+│
+├── Notebook_Experiments/ # EDA & experimentation notebooks
+├── static/ # Static assets
+├── templates/ # HTML templates
+├── requirements.txt
+└── README.md
 
-3. **Activate the Virtual Environment** (Optional)
-   - Activate the virtual environment based on your operating system:
-       ```
-       conda activate <Environment_Name>/
-       ```
+yaml
+Copy code
 
-4. **Install Dependencies**
-   - Navigate to the project directory:
-     ```
-     cd [project_directory]
-     ```
-   - Run the following command to install project dependencies:
-     ```
-     pip install -r requirements.txt
-     ```
+---
 
-5. **Run the Project**
-   - Start the project by running the appropriate command.
-     ```
-     python app.py
-     ```
+## ⚙️ Tech Stack
 
-6. **Access the Project**
-   - Open a web browser or the appropriate client to access the project.
-  
-<br><br>
-### Option 2: Installation from DockerHub
+- **Programming Language:** Python  
+- **Web Framework:** Flask  
+- **Machine Learning:** scikit-learn  
+- **Data Handling:** Pandas, NumPy  
+- **Visualization:** Matplotlib, Seaborn  
+- **MLOps Tools:** DVC, MLflow  
 
-If you prefer to use Docker, you can install and run the project using a Docker container from DockerHub:
+---
 
-1. **Pull the Docker Image**
-   - Open your terminal or command prompt.
-   - Run the following command to pull the Docker image from DockerHub:
-     ```
-     docker pull kalyan45/flight-app
-     ```
+## ▶️ Getting Started
 
-2. **Run the Docker Container**
-   - Start the Docker container by running the following command, and mapping any necessary ports:
-     ```
-     docker run -p 5000:5000 kalyan45/flight-app
-     ```
+### Option 1: Run Locally (Recommended)
 
-3. **Access the Project**
-   - Open a web browser or the appropriate client to access the project.
+#### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Bhagy-Yelleti/flight-fare-prediction-ml.git
+cd flight-fare-prediction-ml
+2️⃣ Create and activate virtual environment
+bash
+Copy code
+python -m venv venv
+venv\Scripts\activate
+3️⃣ Install dependencies
+bash
+Copy code
+pip install -r requirements.txt
+4️⃣ (Demo Mode) Generate dummy ML artifacts
+bash
+Copy code
+python create_dummy_artifacts.py
+5️⃣ Run the application
+bash
+Copy code
+python app.py
+Open in browser:
 
+arduino
+Copy code
+http://localhost:8080
+Option 2: Docker (If Available)
+bash
+Copy code
+docker pull kalyan45/flight-app
+docker run -p 5000:5000 kalyan45/flight-app
+🧠 How It Works
+User submits flight details through the web UI
 
+Input is transformed using a saved preprocessing pipeline
 
+ML model predicts the flight fare
 
+Result is rendered back on the frontend
 
+The architecture cleanly separates training and inference, allowing models to be swapped without changing application logic.
 
+📌 Notes
+ML artifacts (.pkl) are intentionally excluded from version control
+
+Dummy artifacts can be used for UI and pipeline testing
+
+Real training can be enabled by providing a dataset and running the training pipeline
+
+📜 License & Attribution
+This project is released under the GNU General Public License v3.0 (GPL-3.0).
+
+It is a modified and extended version of an open-source implementation originally authored by Kalyan M.
+
+Significant modifications, debugging, refactoring, dependency resolution, and deployment-oriented improvements were implemented by Bhagya Yelleti (2026).
+
+The project remains licensed under GPL-3.0 in full compliance with the original license.
+
+👤 Author
+Bhagya Yelleti
+Machine Learning & Backend Developer
+
+GitHub: https://github.com/Bhagy-Yelleti
+LinkedIn: https://www.linkedin.com/in/bhagya-yelleti/
+
+yaml
+Copy code
