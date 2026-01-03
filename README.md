@@ -41,37 +41,16 @@ The inference pipeline is fully decoupled from training, allowing models to be s
 
 ---
 
-## 🧱 Project Structure
-
-```text
-flight-fare-prediction-ml/
-├── app.py                     # Flask app entry point
-├── Artifacts/                 # ML artifacts (git-ignored)
-├── src/
-│   └── FlightPricePrediction/
-│       ├── components/        # Data ingestion & transformation
-│       ├── pipeline/          # Training & prediction pipelines
-│       ├── utils/             # Utility helpers
-│       ├── exception.py       # Custom exceptions
-│       └── logger.py          # Logging setup
-├── Notebook_Experiments/      # EDA & experimentation
-├── static/                    # Static assets
-├── templates/                 # HTML templates
-├── requirements.txt
-└── README.md
-
-
 ⚙️ TECH STACK
-
 🧠 Machine Learning
 
-scikit-learn – model training & inference
+scikit-learn — model training & inference
 
-Pandas, NumPy – data processing
+Pandas, NumPy — data processing
 
 🌐 Backend / Web
 
-Flask – web application & API
+Flask — web application & API
 
 📊 Visualization
 
@@ -81,20 +60,24 @@ Seaborn
 
 🔁 MLOps & Experiment Tracking
 
-DVC – data & pipeline versioning
+DVC — data & pipeline versioning
 
-MLflow – experiment tracking
+MLflow — experiment tracking
 
 ▶️ GETTING STARTED (RUN LOCALLY)
 📥 1. Clone the Repository
+
 git clone https://github.com/Bhagy-Yelleti/flight-fare-prediction-ml.git
+
 cd flight-fare-prediction-ml
 
 🧪 2. Create & Activate Virtual Environment
+
 python -m venv venv
 venv\Scripts\activate
 
 📦 3. Install Dependencies
+
 pip install -r requirements.txt
 
 🧠 4. Generate Demo ML Artifacts
@@ -104,51 +87,51 @@ Required to run the app without retraining the model
 python create_dummy_artifacts.py
 
 🚀 5. Run the Application
+
 python app.py
 
-
-🌍 Open in browser:
+🌍 Open in Browser
 
 http://localhost:8080
 
 🧠 HOW THE SYSTEM WORKS
 
-📝 User enters flight details via UI
+📝 User enters flight details via the web UI
 ⬇️
-🧮 Input converted into structured DataFrame
+🧮 Input is converted into a structured DataFrame
 ⬇️
-⚙️ Preprocessing pipeline transforms data
+⚙️ Preprocessing pipeline transforms the data
 ⬇️
-📈 Trained ML model predicts fare
+📈 Trained ML model predicts the fare
 ⬇️
-💰 Result displayed on the web interface
+💰 Result is displayed on the web interface
 
-Training and inference are fully decoupled — models can be swapped without touching the app.
+Training and inference are fully decoupled, allowing models to be swapped without touching application code.
 
 📌 IMPORTANT NOTES
 
 ⚠️ ML artifacts (.pkl) are intentionally NOT committed
 🧪 Dummy artifacts allow UI & pipeline testing
 🏋️ Full training can be enabled using real datasets
-📂 Clean production-style src/ architecture
+📂 Clean, production-style src/ architecture
 
 📜 LICENSE & ATTRIBUTION
 
-📄 Licensed under GNU GPL-3.0
+📄 Licensed under GNU General Public License v3.0 (GPL-3.0)
 
 This project is a heavily modified and extended version of an open-source baseline originally authored by Kalyan M.
 
-💥 Major contributions by Bhagya Yelleti (2026):
+💥 Major Contributions by Bhagya Yelleti (2026)
 
 Deep refactoring & bug fixes
 
 Dependency & environment stabilization
 
-Production-ready pipeline setup
+Production-ready ML pipeline setup
 
 Deployment-friendly architecture
 
-✔️ Original license terms are fully respected
+✔️ Original license terms are fully respected and preserved
 
 👤 AUTHOR
 
