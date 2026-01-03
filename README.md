@@ -42,55 +42,55 @@ The inference pipeline is fully decoupled from training, allowing models to be s
 ---
 
 ⚙️ TECH STACK
-🧠 Machine Learning
+🧠 MACHINE LEARNING
 
-scikit-learn — model training & inference
+scikit-learn — Model training & inference
 
-Pandas, NumPy — data processing
+Pandas, NumPy — Data processing & feature handling
 
-🌐 Backend / Web
+🌐 BACKEND / WEB
 
-Flask — web application & API
+Flask — Web application & API layer
 
-📊 Visualization
+📊 VISUALIZATION
 
 Matplotlib
 
 Seaborn
 
-🔁 MLOps & Experiment Tracking
+🔁 MLOPS & EXPERIMENT TRACKING
 
-DVC — data & pipeline versioning
+DVC — Data & pipeline versioning
 
-MLflow — experiment tracking
+MLflow — Experiment tracking & metrics
 
 ▶️ GETTING STARTED (RUN LOCALLY)
-📥 1. Clone the Repository
+📥 1️⃣ CLONE THE REPOSITORY
 
 git clone https://github.com/Bhagy-Yelleti/flight-fare-prediction-ml.git
 
 cd flight-fare-prediction-ml
 
-🧪 2. Create & Activate Virtual Environment
+🧪 2️⃣ CREATE & ACTIVATE VIRTUAL ENVIRONMENT
 
 python -m venv venv
 venv\Scripts\activate
 
-📦 3. Install Dependencies
+📦 3️⃣ INSTALL DEPENDENCIES
 
 pip install -r requirements.txt
 
-🧠 4. Generate Demo ML Artifacts
+🧠 4️⃣ GENERATE DEMO ML ARTIFACTS
 
 Required to run the app without retraining the model
 
 python create_dummy_artifacts.py
 
-🚀 5. Run the Application
+🚀 5️⃣ RUN THE APPLICATION
 
 python app.py
 
-🌍 Open in Browser
+🌍 OPEN IN YOUR BROWSER
 
 http://localhost:8080
 
@@ -104,14 +104,14 @@ http://localhost:8080
 ⬇️
 📈 Trained ML model predicts the fare
 ⬇️
-💰 Result is displayed on the web interface
+💰 Predicted price is displayed on the web interface
 
-Training and inference are fully decoupled, allowing models to be swapped without touching application code.
+🔥 Training and inference are fully decoupled, meaning models can be swapped without touching application code.
 
 📌 IMPORTANT NOTES
 
-⚠️ ML artifacts (.pkl) are intentionally NOT committed
-🧪 Dummy artifacts allow UI & pipeline testing
+⚠️ ML artifacts (.pkl) are intentionally NOT committed to Git
+🧪 Dummy artifacts enable UI & pipeline testing without retraining
 🏋️ Full training can be enabled using real datasets
 📂 Clean, production-style src/ architecture
 
@@ -121,13 +121,13 @@ Training and inference are fully decoupled, allowing models to be swapped withou
 
 This project is a heavily modified and extended version of an open-source baseline originally authored by Kalyan M.
 
-💥 Major Contributions by Bhagya Yelleti (2026)
+💥 MAJOR CONTRIBUTIONS BY BHAGYA YELLETI (2026)
 
-Deep refactoring & bug fixes
+Deep refactoring & critical bug fixes
 
 Dependency & environment stabilization
 
-Production-ready ML pipeline setup
+Production-ready ML pipeline design
 
 Deployment-friendly architecture
 
@@ -135,7 +135,7 @@ Deployment-friendly architecture
 
 👤 AUTHOR
 
-👨‍💻 Bhagya Yelleti
+👨‍💻 BHAGYA YELLETI
 Machine Learning & Backend Developer
 
 🔗 GitHub: https://github.com/Bhagy-Yelleti
