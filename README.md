@@ -1,51 +1,49 @@
-✈️ Flight Fare Prediction
-End-to-End Machine Learning Web Application
+# ✈️ Flight Fare Prediction  
+### End-to-End Machine Learning Web Application
 
-🔗 LinkedIn: https://www.linkedin.com/in/bhagya-yelleti
+🔗 **LinkedIn:** https://www.linkedin.com/in/bhagya-yelleti  
+🔗 **GitHub:** https://github.com/Bhagy-Yelleti  
 
-🔗 GitHub: https://github.com/Bhagy-Yelleti
+---
 
-📌 Overview
+## 📌 Overview
 
-Flight Fare Prediction is a production-style Machine Learning web application that predicts airline ticket prices based on real-world flight parameters such as airline, route, departure & arrival time, number of stops, travel duration, and days left before departure.
+**Flight Fare Prediction** is a production-style **Machine Learning web application** that predicts airline ticket prices based on real-world flight parameters such as airline, route, departure & arrival time, number of stops, travel duration, and days left before departure.
 
 This project demonstrates how an ML model moves from experimentation to a usable web application using clean architecture, serialized pipelines, and a Flask-based interface.
 
-This repository is a significantly modified and extended version of an open-source baseline, with major refactoring, debugging, dependency fixes, and deployment-readiness improvements.
+This repository is a **significantly modified and extended version** of an open-source baseline, with major refactoring, debugging, dependency fixes, and deployment-readiness improvements.
 
-🚀 Features
+---
 
-Interactive Flask web interface
+## 🚀 Features
 
-Modular ML pipeline (training ≠ inference)
+- Interactive Flask web interface  
+- Modular ML pipeline (**training ≠ inference**)  
+- Serialized preprocessing & model artifacts (`.pkl`)  
+- Robust custom exception handling  
+- Structured logging  
+- Clean `src/`-based architecture  
+- Demo mode using dummy artifacts  
+- MLOps tooling with **DVC** & **MLflow**
 
-Serialized preprocessing & model artifacts (.pkl)
+---
 
-Robust custom exception handling
+## 🧠 How It Works
 
-Structured logging
-
-Clean src/-based architecture
-
-Demo mode using dummy artifacts
-
-MLOps tooling with DVC & MLflow
-
-🧠 How It Works
-
-User enters flight details via the web UI
-
-Input is converted into a structured DataFrame
-
-Preprocessing pipeline transforms the data
-
-Trained ML model predicts the fare
-
-Result is rendered back to the UI
+1. User enters flight details via the web UI  
+2. Input is converted into a structured DataFrame  
+3. Preprocessing pipeline transforms the data  
+4. Trained ML model predicts the fare  
+5. Result is rendered back to the UI  
 
 The inference pipeline is fully decoupled from training, allowing models to be swapped without touching application code.
 
-🧱 Project Structure
+---
+
+## 🧱 Project Structure
+
+```text
 flight-fare-prediction-ml/
 ├── app.py                     # Flask app entry point
 ├── Artifacts/                 # ML artifacts (git-ignored)
@@ -61,9 +59,7 @@ flight-fare-prediction-ml/
 ├── templates/                 # HTML templates
 ├── requirements.txt
 └── README.md
-
 ⚙️ Tech Stack
-
 Language: Python
 
 Web Framework: Flask
@@ -79,29 +75,33 @@ MLOps: DVC, MLflow
 ▶️ Getting Started
 Run Locally
 1️⃣ Clone the repository
+bash
+Copy code
 git clone https://github.com/Bhagy-Yelleti/flight-fare-prediction-ml.git
 cd flight-fare-prediction-ml
-
 2️⃣ Create & activate virtual environment
+bash
+Copy code
 python -m venv venv
 venv\Scripts\activate
-
 3️⃣ Install dependencies
+bash
+Copy code
 pip install -r requirements.txt
-
 4️⃣ Generate demo ML artifacts
+bash
+Copy code
 python create_dummy_artifacts.py
-
 5️⃣ Run the application
+bash
+Copy code
 python app.py
+Open in your browser:
 
-
-Open in browser:
-
+arduino
+Copy code
 http://localhost:8080
-
 📌 Notes
-
 ML artifacts are intentionally excluded from version control
 
 Dummy artifacts allow UI & pipeline testing without retraining
@@ -109,7 +109,6 @@ Dummy artifacts allow UI & pipeline testing without retraining
 Full training can be enabled by providing a dataset and running the training pipeline
 
 📜 License & Attribution
-
 This project is licensed under the GNU General Public License v3.0 (GPL-3.0).
 
 It is a modified and extended version of an open-source project originally authored by Kalyan M.
@@ -119,10 +118,10 @@ Significant refactoring, debugging, dependency resolution, and deployment-orient
 License terms are fully respected and preserved.
 
 👤 Author
-
 Bhagya Yelleti
 Machine Learning & Backend Developer
 
 🔗 GitHub: https://github.com/Bhagy-Yelleti
-
 🔗 LinkedIn: https://www.linkedin.com/in/bhagya-yelleti
+
+
