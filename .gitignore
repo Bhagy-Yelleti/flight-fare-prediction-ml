@@ -143,3 +143,5 @@ __pypackages__/
 *.so
 *.dll
 *.exe
+# Python package metadata
+*.egg-info/

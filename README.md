@@ -1,46 +1,70 @@
-# ✈️ Flight Fare Prediction – ML Web Application
+# ✈️ Flight Fare Prediction  
+### End-to-End Machine Learning Web Application
 
-🔗 **LinkedIn:** https://www.linkedin.com/in/bhagya-yelleti/  
-🔗 **GitHub:** https://github.com/Bhagy-Yelleti  
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?logo=python" />
+  <img src="https://img.shields.io/badge/Flask-Web_App-black?logo=flask" />
+  <img src="https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-orange" />
+  <img src="https://img.shields.io/badge/MLOps-DVC%20%7C%20MLflow-purple" />
+  <img src="https://img.shields.io/badge/License-GPL--3.0-green" />
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/bhagya-yelleti/">LinkedIn</a> ·
+  <a href="https://github.com/Bhagy-Yelleti">GitHub</a>
+</p>
 
 ---
 
-## 📌 About the Project
+## 📌 Overview
 
-**Flight Fare Prediction** is an end-to-end **Machine Learning web application** that predicts flight ticket prices based on user-provided travel details such as airline, source city, destination city, departure time, number of stops, duration, and days left for departure.
+**Flight Fare Prediction** is a production-style **Machine Learning web application** that predicts airline ticket prices based on real-world flight parameters such as airline, route, departure/arrival time, number of stops, travel duration, and days left before departure.
 
-The project follows a **production-style ML pipeline**, integrating preprocessing, model inference using saved artifacts, and a Flask-based web interface for real-time predictions.
+The project demonstrates how an ML model is taken **from experimentation to a usable web application**, with proper preprocessing pipelines, serialized artifacts, modular code structure, and a clean Flask interface.
 
-This repository represents a **significantly modified and extended version** of an open-source project, with major debugging, refactoring, dependency resolution, and deployment-readiness improvements implemented.
+This repository represents a **significantly modified and extended version** of an open-source baseline. Major refactoring, debugging, dependency fixes, and deployment-readiness improvements have been implemented.
 
 ---
 
 ## 🚀 Features
 
-- Web-based interface built using Flask  
-- Modular ML pipeline (preprocessing → prediction)  
-- Artifact-based model loading (`.pkl`)  
-- Custom exception handling and logging  
-- Clean `src/` project structure  
-- Demo mode using dummy ML artifacts  
-- MLOps tooling integration (DVC, MLflow)
+- Interactive Flask web interface  
+- Modular ML pipeline (training ≠ inference)  
+- Serialized preprocessing & model artifacts (`.pkl`)  
+- Robust custom exception handling  
+- Structured logging  
+- Clean `src/`-based architecture  
+- Demo mode support using dummy artifacts  
+- MLOps tooling with DVC & MLflow  
 
 ---
 
-## 🏗️ Project Structure
+## 🧠 How It Works
+
+1. User enters flight details via the web form  
+2. Input is converted into a structured DataFrame  
+3. Preprocessing pipeline transforms the data  
+4. Trained ML model predicts the fare  
+5. Result is rendered back to the UI  
+
+The inference pipeline is **fully decoupled** from training, allowing models to be swapped without touching application code.
+
+---
+
+## 🧱 Project Structure
 
 flight-fare-prediction-ml/
-├── app.py # Flask application entry point
+├── app.py # Flask app entry point
 ├── Artifacts/ # ML artifacts (ignored in git)
 ├── src/
 │ └── FlightPricePrediction/
 │ ├── components/ # Data ingestion & transformation
 │ ├── pipeline/ # Training & prediction pipelines
-│ ├── utils/ # Utility helpers
+│ ├── utils/ # Utility functions
 │ ├── exception.py # Custom exception handling
-│ └── logger.py # Logging utilities
-├── Notebook_Experiments/ # EDA & experimentation notebooks
-├── static/ # Static assets
+│ └── logger.py # Logging setup
+├── Notebook_Experiments/ # EDA & model experiments
+├── static/ # Static files (CSS, assets)
 ├── templates/ # HTML templates
 ├── requirements.txt
 └── README.md
@@ -63,64 +87,59 @@ Copy code
 
 ## ▶️ Getting Started
 
-### Run Locally (Recommended)
+### Run Locally
 
-#### 1. Clone the repository
+#### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/Bhagy-Yelleti/flight-fare-prediction-ml.git
 cd flight-fare-prediction-ml
-2. Create and activate a virtual environment
+2️⃣ Create & activate virtual environment
 bash
 Copy code
 python -m venv venv
 venv\Scripts\activate
-3. Install dependencies
+3️⃣ Install dependencies
 bash
 Copy code
 pip install -r requirements.txt
-4. Generate dummy ML artifacts (demo mode)
+4️⃣ (Demo Mode) Generate dummy ML artifacts
 bash
 Copy code
 python create_dummy_artifacts.py
-5. Run the application
+5️⃣ Run the application
 bash
 Copy code
 python app.py
-Open in your browser:
+Open in browser:
 
 arduino
 Copy code
 http://localhost:8080
-🧠 How It Works
-User submits flight details through the web UI
 
-Input is transformed using a saved preprocessing pipeline
-
-ML model predicts the flight fare
-
-Result is rendered back on the frontend
-
-The architecture cleanly separates training and inference, allowing models to be swapped without changing application logic.
 
 📌 Notes
-ML artifacts (.pkl) are intentionally excluded from version control
+ML artifacts are intentionally excluded from version control
 
-Dummy artifacts are used for UI and pipeline testing
+Dummy artifacts allow UI & pipeline testing without retraining
 
-Real training can be enabled by providing a dataset and running the training pipeline
+Full training can be enabled by providing the dataset and running the training pipeline
 
 📜 License & Attribution
-This project is released under the GNU General Public License v3.0 (GPL-3.0).
+This project is licensed under the GNU General Public License v3.0 (GPL-3.0).
 
-It is a modified and extended version of an open-source implementation originally authored by Kalyan M.
+It is a modified and extended version of an open-source project originally authored by Kalyan M.
 
-Significant modifications, debugging, refactoring, dependency resolution, and deployment-oriented improvements were implemented by Bhagya Yelleti (2026).
+Significant refactoring, debugging, dependency resolution, and deployment-oriented improvements were implemented by Bhagya Yelleti (2026).
 
-The project remains licensed under GPL-3.0 in full compliance with the original license.
+License terms are fully respected and preserved.
 
 👤 Author
 Bhagya Yelleti
 Machine Learning & Backend Developer
 
 GitHub: https://github.com/Bhagy-Yelleti
+
 LinkedIn: https://www.linkedin.com/in/bhagya-yelleti/
+
+yaml
+Copy code
