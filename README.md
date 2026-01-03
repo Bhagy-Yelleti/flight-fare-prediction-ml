@@ -61,66 +61,98 @@ flight-fare-prediction-ml/
 └── README.md
 
 
-⚙️ Tech Stack
+⚙️ TECH STACK
 
-Language: Python
+🧠 Machine Learning
 
-Web Framework: Flask
+scikit-learn – model training & inference
 
-Machine Learning: scikit-learn
+Pandas, NumPy – data processing
 
-Data Processing: Pandas, NumPy
+🌐 Backend / Web
 
-Visualization: Matplotlib, Seaborn
+Flask – web application & API
 
-MLOps: DVC, MLflow
+📊 Visualization
 
-▶️ Getting Started
-Run Locally
+Matplotlib
 
-1️⃣ Clone the repository
+Seaborn
+
+🔁 MLOps & Experiment Tracking
+
+DVC – data & pipeline versioning
+
+MLflow – experiment tracking
+
+▶️ GETTING STARTED (RUN LOCALLY)
+📥 1. Clone the Repository
 git clone https://github.com/Bhagy-Yelleti/flight-fare-prediction-ml.git
 cd flight-fare-prediction-ml
 
-2️⃣ Create & activate virtual environment
+🧪 2. Create & Activate Virtual Environment
 python -m venv venv
 venv\Scripts\activate
 
-3️⃣ Install dependencies
+📦 3. Install Dependencies
 pip install -r requirements.txt
 
-4️⃣ Generate demo ML artifacts
+🧠 4. Generate Demo ML Artifacts
+
+Required to run the app without retraining the model
+
 python create_dummy_artifacts.py
 
-5️⃣ Run the application
+🚀 5. Run the Application
 python app.py
 
 
-Open in your browser:
+🌍 Open in browser:
 
 http://localhost:8080
 
-📌 Notes
+🧠 HOW THE SYSTEM WORKS
 
-ML artifacts (.pkl) are intentionally excluded from version control
+📝 User enters flight details via UI
+⬇️
+🧮 Input converted into structured DataFrame
+⬇️
+⚙️ Preprocessing pipeline transforms data
+⬇️
+📈 Trained ML model predicts fare
+⬇️
+💰 Result displayed on the web interface
 
-Dummy artifacts allow UI & inference pipeline testing without retraining
+Training and inference are fully decoupled — models can be swapped without touching the app.
 
-Full training can be enabled by providing a dataset and running the training pipeline
+📌 IMPORTANT NOTES
 
-📜 License & Attribution
+⚠️ ML artifacts (.pkl) are intentionally NOT committed
+🧪 Dummy artifacts allow UI & pipeline testing
+🏋️ Full training can be enabled using real datasets
+📂 Clean production-style src/ architecture
 
-This project is licensed under the GNU General Public License v3.0 (GPL-3.0).
+📜 LICENSE & ATTRIBUTION
 
-It is a modified and extended version of an open-source project originally authored by Kalyan M.
+📄 Licensed under GNU GPL-3.0
 
-Significant refactoring, debugging, dependency resolution, and deployment-oriented improvements were implemented by Bhagya Yelleti (2026).
+This project is a heavily modified and extended version of an open-source baseline originally authored by Kalyan M.
 
-All license terms are fully respected and preserved.
+💥 Major contributions by Bhagya Yelleti (2026):
 
-👤 Author
+Deep refactoring & bug fixes
 
-Bhagya Yelleti
+Dependency & environment stabilization
+
+Production-ready pipeline setup
+
+Deployment-friendly architecture
+
+✔️ Original license terms are fully respected
+
+👤 AUTHOR
+
+👨‍💻 Bhagya Yelleti
 Machine Learning & Backend Developer
 
 🔗 GitHub: https://github.com/Bhagy-Yelleti
