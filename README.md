@@ -1,7 +1,6 @@
 # Flight Fare Prediction
 
-- LinkedIn [Hema Kalyan Murapaka](https://www.linkedin.com/in/hemakalyan/)
-- Medium [KalyanMurapaka274](https://medium.com/@kalyanmurapaka274)
+- LinkedIn [Bhagya Yelleti](https://www.linkedin.com/in/bhagya-yelleti/)
 
 ## About The Project
 
@@ -90,29 +89,7 @@ If you prefer to use Docker, you can install and run the project using a Docker 
    - Open a web browser or the appropriate client to access the project.
 
 
-## Contributing
-
-Contributions are what makes the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch
-3. Commit your Changes
-4. Push to the Branch
-5. Open a Pull Request
-
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
-## Contact
-
-Hema Kalyan Murapaka - [@kalyanmurapaka274@gmail.com](kalyanmurapaka274@gmail.com)
 
 
-## Acknowledgements
-
-We'd like to extend our gratitude to all individuals and organizations who have played a role in the development and success of this project. Your support, whether through contributions, inspiration, or encouragement, has been invaluable. Thank you for being a part of our journey.
