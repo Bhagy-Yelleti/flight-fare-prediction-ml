@@ -59,7 +59,10 @@ flight-fare-prediction-ml/
 ├── templates/                 # HTML templates
 ├── requirements.txt
 └── README.md
+
+
 ⚙️ Tech Stack
+
 Language: Python
 
 Web Framework: Flask
@@ -74,54 +77,52 @@ MLOps: DVC, MLflow
 
 ▶️ Getting Started
 Run Locally
+
 1️⃣ Clone the repository
-bash
-Copy code
 git clone https://github.com/Bhagy-Yelleti/flight-fare-prediction-ml.git
 cd flight-fare-prediction-ml
+
 2️⃣ Create & activate virtual environment
-bash
-Copy code
 python -m venv venv
 venv\Scripts\activate
+
 3️⃣ Install dependencies
-bash
-Copy code
 pip install -r requirements.txt
+
 4️⃣ Generate demo ML artifacts
-bash
-Copy code
 python create_dummy_artifacts.py
+
 5️⃣ Run the application
-bash
-Copy code
 python app.py
+
+
 Open in your browser:
 
-arduino
-Copy code
 http://localhost:8080
-📌 Notes
-ML artifacts are intentionally excluded from version control
 
-Dummy artifacts allow UI & pipeline testing without retraining
+📌 Notes
+
+ML artifacts (.pkl) are intentionally excluded from version control
+
+Dummy artifacts allow UI & inference pipeline testing without retraining
 
 Full training can be enabled by providing a dataset and running the training pipeline
 
 📜 License & Attribution
+
 This project is licensed under the GNU General Public License v3.0 (GPL-3.0).
 
 It is a modified and extended version of an open-source project originally authored by Kalyan M.
 
 Significant refactoring, debugging, dependency resolution, and deployment-oriented improvements were implemented by Bhagya Yelleti (2026).
 
-License terms are fully respected and preserved.
+All license terms are fully respected and preserved.
 
 👤 Author
+
 Bhagya Yelleti
 Machine Learning & Backend Developer
 
 🔗 GitHub: https://github.com/Bhagy-Yelleti
+
 🔗 LinkedIn: https://www.linkedin.com/in/bhagya-yelleti
-
-
