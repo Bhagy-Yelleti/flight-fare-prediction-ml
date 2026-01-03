@@ -41,91 +41,90 @@ The inference pipeline is fully decoupled from training, allowing models to be s
 
 ---
 
-⚙️ TECH STACK
+## Tech Stack
 🧠 MACHINE LEARNING
 
 scikit-learn — Model training & inference
 
-Pandas, NumPy — Data processing & feature handling
+Pandas & NumPy — Data processing and feature handling
 
-🌐 BACKEND / WEB
+## 🌐 How It Works
 
-Flask — Web application & API layer
+Flask — Web application and API layer
 
-📊 VISUALIZATION
+## 📊 VISUALIZATION
 
 Matplotlib
 
 Seaborn
 
-🔁 MLOPS & EXPERIMENT TRACKING
+## 🔁 MLOPS & EXPERIMENT TRACKING
 
-DVC — Data & pipeline versioning
+DVC — Data and pipeline versioning
 
-MLflow — Experiment tracking & metrics
+MLflow — Experiment tracking and metrics
 
-▶️ GETTING STARTED (RUN LOCALLY)
-📥 1️⃣ CLONE THE REPOSITORY
+## ▶️ GETTING STARTED (RUN LOCALLY)
 
+📥 STEP 1 — CLONE THE REPOSITORY
 git clone https://github.com/Bhagy-Yelleti/flight-fare-prediction-ml.git
-
 cd flight-fare-prediction-ml
 
-🧪 2️⃣ CREATE & ACTIVATE VIRTUAL ENVIRONMENT
-
+🧪 STEP 2 — CREATE & ACTIVATE VIRTUAL ENVIRONMENT
 python -m venv venv
 venv\Scripts\activate
 
-📦 3️⃣ INSTALL DEPENDENCIES
-
+📦 STEP 3 — INSTALL DEPENDENCIES
 pip install -r requirements.txt
 
-🧠 4️⃣ GENERATE DEMO ML ARTIFACTS
+🧠 STEP 4 — GENERATE DEMO ML ARTIFACTS
 
-Required to run the app without retraining the model
+(Required to run the app without retraining the model)
 
 python create_dummy_artifacts.py
 
-🚀 5️⃣ RUN THE APPLICATION
-
+🚀 STEP 5 — RUN THE APPLICATION
 python app.py
 
-🌍 OPEN IN YOUR BROWSER
+## 🌍 OPEN IN YOUR BROWSER
 
 http://localhost:8080
 
-🧠 HOW THE SYSTEM WORKS
+## 🧠 HOW THE SYSTEM WORKS
 
-📝 User enters flight details via the web UI
-⬇️
+📝 User enters flight details through the web interface
+
 🧮 Input is converted into a structured DataFrame
-⬇️
+
 ⚙️ Preprocessing pipeline transforms the data
-⬇️
-📈 Trained ML model predicts the fare
-⬇️
-💰 Predicted price is displayed on the web interface
+
+📈 Trained ML model predicts the flight fare
+
+💰 Predicted price is displayed on the UI
 
 🔥 Training and inference are fully decoupled, meaning models can be swapped without touching application code.
 
-📌 IMPORTANT NOTES
+## 📌 IMPORTANT NOTES
 
-⚠️ ML artifacts (.pkl) are intentionally NOT committed to Git
-🧪 Dummy artifacts enable UI & pipeline testing without retraining
+⚠️ ML artifacts (.pkl) are intentionally NOT committed
+
+🧪 Dummy artifacts allow UI and pipeline testing
+
 🏋️ Full training can be enabled using real datasets
+
 📂 Clean, production-style src/ architecture
 
-📜 LICENSE & ATTRIBUTION
+## 📜 LICENSE & ATTRIBUTION
 
 📄 Licensed under GNU General Public License v3.0 (GPL-3.0)
 
-This project is a heavily modified and extended version of an open-source baseline originally authored by Kalyan M.
+This project is a heavily modified and extended version of an open-source baseline originally authored by Kalyan M
 
-💥 MAJOR CONTRIBUTIONS BY BHAGYA YELLETI (2026)
+## 💥 MAJOR CONTRIBUTIONS BY BHAGYA YELLETI (2026)
 
-Deep refactoring & critical bug fixes
+Deep refactoring and critical bug fixes
 
-Dependency & environment stabilization
+Dependency and environment stabilization
 
 Production-ready ML pipeline design
 
@@ -133,11 +132,11 @@ Deployment-friendly architecture
 
 ✔️ Original license terms are fully respected and preserved
 
-👤 AUTHOR
-
+## 👤 AUTHOR
 👨‍💻 BHAGYA YELLETI
+
 Machine Learning & Backend Developer
 
-🔗 GitHub: https://github.com/Bhagy-Yelleti
+GitHub: https://github.com/Bhagy-Yelleti
 
-🔗 LinkedIn: https://www.linkedin.com/in/bhagya-yelleti
+LinkedIn: https://www.linkedin.com/in/bhagya-yelleti
